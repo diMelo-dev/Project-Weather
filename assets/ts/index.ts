@@ -65,7 +65,8 @@ function greeting() {
 async function makeRequisition() {
     
     let city = document.querySelector<HTMLInputElement>('.input-box input')!.value;
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(city)}&appid=6e54b5964edaaa003cfd7b8ca2105137&units=metric`;
+    let yourKey: number = 0;//Enter your OpenWeather Key here!
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(city)}&appid=${yourKey}&units=metric`;
     
 
     try {

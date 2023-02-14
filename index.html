@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="input-page">
+
+        <div class="input-page-content container">
+
+            <div class="input-page-top">
+
+                <div class="logo-box">
+
+                    <img src="assets/images/logo-removebg.png"/>
+
+                </div>
+
+                <div class="top-title">
+                    Weather App
+                </div>
+
+            </div>
+
+            <div class="input-page-bottom">
+
+                <div class="bottom-headline">
+                    Good Morning!
+                </div>
+
+                <div class="input-field">
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Search a Location"/>
+                        
+                        <div class="input-svg-box">
+                            <svg width="20" height="20" fill="none" stroke="#7b7579" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.875 18.75a7.875 7.875 0 1 0 0-15.75 7.875 7.875 0 0 0 0 15.75Z"></path>
+                                <path d="M16.443 16.445 21 21.002"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="input-button">Search</div>
+
+                </div>
+
+                <div class="warning hidden">Invalid City Name</div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="data-page hidden">
+        
+
+        <div class="data-page-content container">
+
+            <div class="data-page-top">
+
+                <div class="data-top-svg">
+                    <svg width="30" height="30" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 12H3.75"></path>
+                        <path d="M10.5 5.25 3.75 12l6.75 6.75"></path>
+                    </svg>
+                </div>
+
+                <div class="data-top-headline">
+                    Return
+                </div>
+
+            </div>
+
+            <div class="data-page-middle">
+
+                <div class="middle-headline">
+                    <div class="headline-title">São Carlos, Brazil</div>
+                    <div class="headline-description">Sat, 11 Feb, 2023</div>
+                </div>
+
+                <div class="middle-main">
+
+                    <div class="main-icon-box">
+                        <img src="assets/images/icon.png" />
+                    </div>
+
+                    <div class="main-title">
+                        22
+                        <span>°</span>
+                    </div>
+
+                    <div class="main-description">Sunny Day</div>
+
+                </div> 
+
+            </div>
+
+            <div class="data-page-bottom">
+
+                <div class="bottom-data" data-type='wind'>
+
+                    <div class="bottom-data-title">Wind Speed</div>
+
+                    <div class="bottom-data-content">
+                        15 <span>Km</span>
+                    </div>
+
+                </div>
+
+                <div class="bottom-data" data-type='humidity'>
+
+                    <div class="bottom-data-title">Humidity</div>
+
+                    <div class="bottom-data-content">
+                        32 <span>%</span>
+                    </div>
+
+                </div>
+
+                <div class="bottom-data" data-type='feels'>
+
+                    <div class="bottom-data-title">Feels Like</div>
+
+                    <div class="bottom-data-content">
+                        27 <span>°</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>var exports = {}</script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>

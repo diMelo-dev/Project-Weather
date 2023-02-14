@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+body.morning {
+    background: rgb(63,147,232);
+    background: linear-gradient(0deg, rgba(63,147,232,1) 23%, rgba(55,188,247,1) 100%);
+}
+
+body.afternoon {
+    background: rgb(254,141,0);
+    background: linear-gradient(0deg, rgba(254,141,0,1) 23%, rgba(251,190,1,1) 100%);
+}
+
+body.evening {
+    background: rgb(4,4,4);
+    background: linear-gradient(0deg, rgba(4,4,4,1) 23%, rgba(54,57,67,1) 100%);
+}
+
+.container {
+    padding: 10px;
+    max-width: 990px;
+    width: 100%;
+    margin: auto;
+}
+
+/**************INPUT-PAGE**************/
+.input-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.input-page.hidden {
+    display: none;
+}
+
+.input-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+/**************INPUT-PAGE-TOP**************/
+.input-page-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    width: 50px;
+}
+
+.logo-box img {
+    width: 100%;
+}
+
+.top-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/**************INPUT-PAGE-BOTTOM**************/
+.input-page-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-headline {
+    font-size: 18px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-box {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.input-box.invalid {
+    border: 3px solid red;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px 5px 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border:none;
+}
+
+.input-svg-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.input-button {
+    display: inline-block;
+    padding: 8px;
+    border: 3px solid white;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.input-button:hover {
+    background-color: #fff;
+    color: #7b7579;
+}
+
+.warning.hidden {
+    display: none;
+}
+
+
+/**************DATA-PAGE**************/
+.data-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.data-page.hidden {
+    display: none;
+}
+
+.data-page-content {
+    height: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+}
+
+/**************DATA-PAGE-TOP**************/
+.data-page-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.data-top-headline {
+    margin: auto;
+    font-size: 22px;
+}
+
+.data-page-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-page-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************DATA-PAGE-MIDDLE**************/
+.data-page-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-headline {
+    text-align: center;
+}
+
+.headline-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.headline-description {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.middle-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-icon-box {
+    width: 160px;
+}
+
+.main-icon-box img {
+    width: 100%;
+}
+
+.main-title {
+    position: relative;
+    font-size: 62px;
+    font-weight: 700;
+    display: flex;
+}
+
+.main-title span {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.main-description {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/**************DATA-PAGE-MIDDLE**************/
+.data-page-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-data-title {
+    font-size: 15px;
+}
+
+.bottom-data-content {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.bottom-data-content span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+div[data-type='feels'] .bottom-data-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
